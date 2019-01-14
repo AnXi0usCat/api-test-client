@@ -1,4 +1,4 @@
-package com.mishas.stuff.client;
+package com.mishas.stuff.atc.client;
 
 import com.mishas.stuff.atc.web.dto.PrivilegeDto;
 

@@ -1,14 +1,15 @@
-package com.mishas.stuff.client;
+package com.mishas.stuff.atc.client;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
-import com.mishas.stuff.atc.client.AtcPaths;
 import com.mishas.stuff.common.web.INameableDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
 
+@Component
 public abstract class GenericSimpleApiClient<T extends INameableDto> {
 
     private final static String JSON = MediaType.APPLICATION_JSON.toString();
