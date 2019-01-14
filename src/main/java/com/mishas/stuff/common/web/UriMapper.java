@@ -1,6 +1,6 @@
 package com.mishas.stuff.common.web;
 
-public class UriMapper implements IUriMaper {
+public class UriMapper implements IUriMapper {
 
     public UriMapper() {
         super();

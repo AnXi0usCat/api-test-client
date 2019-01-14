@@ -8,7 +8,7 @@ public final class CommonPaths {
     private String protocol;
     @Value("${http.host}")
     private String host;
-    @Value("${http.port}")
+    @Value("${server.port}")
     private String port;
 
     public CommonPaths() {
