@@ -3,6 +3,7 @@ package com.mishas.stuff.atc.client;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
+import com.jayway.restassured.specification.RequestSpecification;
 import com.mishas.stuff.common.web.INameableDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -77,5 +78,9 @@ public abstract class GenericSimpleApiClient<T extends INameableDto> {
 
     public final Response read(String uri) {
         return RestAssured.given().accept(ContentType.JSON).get(uri);
+    }
+
+    public final RequestSpecification given() {
+        return  RestAssured.given();
     }
 }
